@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaOps — AI Operations Assistant</title>
+    <title>NovaOps — AI Operations & Automation</title>
     <style>
         :root {
             --navy: #0a0a0f;
@@ -187,6 +187,11 @@
             border-color: rgba(99, 102, 241, 0.3);
         }
         
+        .card.new-service {
+            border-color: rgba(99, 102, 241, 0.3);
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(99, 102, 241, 0.05));
+        }
+        
         .card h3 {
             font-size: 1.15rem;
             margin-bottom: 16px;
@@ -214,14 +219,32 @@
             margin-bottom: 16px;
         }
         
+        .new-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
         }
         
+        .pricing-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        
         @media (max-width: 768px) {
-            .pricing-grid {
+            .pricing-grid, .pricing-grid-2 {
                 grid-template-columns: 1fr;
             }
         }
@@ -383,7 +406,7 @@
         <div class="container">
             <p class="hero-tag">For founders who wear too many hats</p>
             <h1>Stop Doing <span>Unproductive Work</span></h1>
-            <p class="hero-sub">What if you had 10+ extra hours every week? I handle the tasks that don't grow your business — so you can focus on revenue.</p>
+            <p class="hero-sub">AI operations, automation, and 24/7 phone answering — so you can focus on revenue.</p>
             <div class="hero-results">
                 <div class="result-item">
                     <div class="result-num">12hr</div>
@@ -394,8 +417,8 @@
                     <div class="result-label">Turnaround time</div>
                 </div>
                 <div class="result-item">
-                    <div class="result-num">$0</div>
-                    <div class="result-label">Software costs</div>
+                    <div class="result-num">24/7</div>
+                    <div class="result-label">Phone coverage</div>
                 </div>
             </div>
             <a href="mailto:novaopsassistant@gmail.com?subject=Interested+in+NovaOps" class="cta-button">Get 10 Hours Back Every Week</a>
@@ -410,15 +433,43 @@
     <section class="section">
         <div class="container">
             <h2>Services I Offer</h2>
-            <p class="section-sub">Specific tasks I can take off your plate — every week.</p>
+            <p class="section-sub">AI operations, automation, and voice — everything you need to scale without adding headcount.</p>
             
             <div class="grid">
+                <div class="card new-service">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Automation Setup <span class="new-badge">NEW</span></h3>
+                    <p>n8n & Zapier workflows that run while you sleep.</p>
+                    <ul>
+                        <li>n8n & Zapier workflows</li>
+                        <li>Email automations</li>
+                        <li>CRM integrations</li>
+                        <li>Lead routing & follow-ups</li>
+                        <li>Calendar scheduling</li>
+                        <li>One-time setup + ongoing support</li>
+                    </ul>
+                </div>
+                
+                <div class="card new-service">
+                    <div class="card-icon">📞</div>
+                    <h3>AI Voice Receptionist <span class="new-badge">NEW</span></h3>
+                    <p>24/7 phone answering that never sleeps, never misses a call.</p>
+                    <ul>
+                        <li>24/7 live phone answering</li>
+                        <li>Appointment scheduling</li>
+                        <li>Message capture & delivery</li>
+                        <li>FAQ handling</li>
+                        <li>Call routing & escalation</li>
+                        <li>CRM integration</li>
+                    </ul>
+                </div>
+                
                 <div class="card">
                     <div class="card-icon">🔍</div>
                     <h3>Research & Analysis</h3>
                     <p>Deep dives into competitors, markets, and prospects.</p>
                     <ul>
-                        <li>Competitor pricing & product tracking</li>
+                        <li>Competitor pricing & tracking</li>
                         <li>Lead research & enrichment</li>
                         <li>Market trend reports</li>
                         <li>Industry analysis</li>
@@ -435,19 +486,6 @@
                         <li>Product descriptions</li>
                         <li>Social media posts</li>
                         <li>Landing page copy</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Automation & Setup</h3>
-                    <p>Systems that run while you sleep.</p>
-                    <ul>
-                        <li>Zapier / Make workflows</li>
-                        <li>Email automations</li>
-                        <li>CRM data entry & cleanup</li>
-                        <li>Calendar scheduling</li>
-                        <li>Form & survey setup</li>
                     </ul>
                 </div>
                 
@@ -473,19 +511,6 @@
                         <li>Competitor product analysis</li>
                         <li>Order processing help</li>
                         <li>Review response drafts</li>
-                    </ul>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">📞</div>
-                    <h3>Sales Support</h3>
-                    <p>Help close more deals — faster.</p>
-                    <ul>
-                        <li>Cold outreach drafts</li>
-                        <li>Follow-up sequences</li>
-                        <li>Meeting notes & summaries</li>
-                        <li>Proposal templates</li>
-                        <li>Pipeline research</li>
                     </ul>
                 </div>
             </div>
@@ -517,7 +542,7 @@
     
     <section class="section">
         <div class="container">
-            <h2>Simple Pricing</h2>
+            <h2>AI Operations Pricing</h2>
             <div class="pricing-grid">
                 <div class="price-card">
                     <h3>Starter</h3>
@@ -527,7 +552,7 @@
                         <li>Email support</li>
                         <li>Research & reports</li>
                         <li>Content drafting</li>
-                        <li>Basic automation</li>
+                        <li>Basic automation setup</li>
                     </ul>
                     <a href="mailto:novaopsassistant@gmail.com?subject=Starter+Plan" class="cta-button" style="width:100%;">Start</a>
                 </div>
@@ -559,11 +584,90 @@
         </div>
     </section>
     
+    <section class="section">
+        <div class="container">
+            <h2>AI Voice Receptionist Pricing</h2>
+            <p class="section-sub">24/7 phone answering. Never miss a call again.</p>
+            <div class="pricing-grid-2">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <div class="price">$197<span>/mo</span></div>
+                    <ul>
+                        <li>200 calls per month</li>
+                        <li>Message capture</li>
+                        <li>SMS & email delivery</li>
+                        <li>Business hours coverage</li>
+                        <li>Simple FAQ handling</li>
+                    </ul>
+                    <a href="mailto:novaopsassistant@gmail.com?subject=Voice+Starter" class="cta-button" style="width:100%;">Start</a>
+                </div>
+                <div class="price-card featured">
+                    <h3>Growth</h3>
+                    <div class="price">$347<span>/mo</span></div>
+                    <ul>
+                        <li>500 calls per month</li>
+                        <li>Calendar scheduling</li>
+                        <li>24/7 coverage</li>
+                        <li>Multi-step flows</li>
+                        <li>CRM integration</li>
+                    </ul>
+                    <a href="mailto:novaopsassistant@gmail.com?subject=Voice+Growth" class="cta-button" style="width:100%;">Start</a>
+                </div>
+                <div class="price-card">
+                    <h3>Scale</h3>
+                    <div class="price">$547<span>/mo</span></div>
+                    <ul>
+                        <li>Unlimited calls</li>
+                        <li>Advanced CRM sync</li>
+                        <li>Custom workflows</li>
+                        <li>Priority support</li>
+                        <li>Dedicated phone number</li>
+                    </ul>
+                    <a href="mailto:novaopsassistant@gmail.com?subject=Voice+Scale" class="cta-button" style="width:100%;">Start</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <h2>Automation Setup</h2>
+            <p class="section-sub">One-time setup + optional monthly maintenance</p>
+            <div class="pricing-grid" style="max-width: 600px; margin: 0 auto;">
+                <div class="price-card">
+                    <h3>Setup</h3>
+                    <div class="price">$299<span one-time></span></div>
+                    <ul>
+                        <li>n8n or Zapier workflow</li>
+                        <li>Up to 5 app integrations</li>
+                        <li>Testing & optimization</li>
+                        <li>Documentation</li>
+                        <li>30-day support</li>
+                    </ul>
+                    <a href="mailto:novaopsassistant@gmail.com?subject=Automation+Setup" class="cta-button" style="width:100%;">Get Started</a>
+                </div>
+                <div class="price-card featured">
+                    <h3>Retainer</h3>
+                    <div class="price">$97<span>/mo</span></div>
+                    <ul>
+                        <li>Ongoing maintenance</li>
+                        <li>Unlimited tweaks</li>
+                        <li>New workflow creation</li>
+                        <li>Priority support</li>
+                        <li>Monthly optimization</li>
+                    </ul>
+                    <a href="mailto:novaopsassistant@gmail.com?subject=Automation+Retainer" class="cta-button" style="width:100%;">Start</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <footer>
         <div class="container">
             <div class="logo" style="margin-bottom: 16px;">Nova<span>Ops</span></div>
             <p><a href="mailto:novaopsassistant@gmail.com">novaopsassistant@gmail.com</a></p>
-            <p class="tagline">Currently accepting 5 new clients. No contracts. Cancel anytime.</p>
+            <p class="tagline">AI Operations • Automation • 24/7 Voice Receptionist</p>
+            <p class="tagline">Currently accepting new clients. No contracts. Cancel anytime.</p>
             
             <div style="margin-top: 40px; max-width: 400px; margin-left: auto; margin-right: auto;">
                 <h4 style="color: white; margin-bottom: 16px;">Or send a quick message:</h4>
@@ -572,9 +676,13 @@
                     <input type="email" name="email" placeholder="Your email" required style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--navy-light); color: white;">
                     <select name="plan" style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--navy-light); color: white;">
                         <option value="">Interested in...</option>
-                        <option value="starter">Starter ($297/mo)</option>
-                        <option value="growth">Growth ($597/mo)</option>
-                        <option value="scale">Scale ($1,197/mo)</option>
+                        <option value="ai-ops-starter">AI Ops Starter ($297/mo)</option>
+                        <option value="ai-ops-growth">AI Ops Growth ($597/mo)</option>
+                        <option value="ai-ops-scale">AI Ops Scale ($1,197/mo)</option>
+                        <option value="voice-starter">Voice Starter ($197/mo)</option>
+                        <option value="voice-growth">Voice Growth ($347/mo)</option>
+                        <option value="voice-scale">Voice Scale ($547/mo)</option>
+                        <option value="automation">Automation Setup ($299)</option>
                         <option value="chat">Just want to chat</option>
                     </select>
                     <textarea name="message" placeholder="Tell me about your biggest operational challenge..." rows="4" style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--navy-light); color: white; resize: vertical;"></textarea>
@@ -583,18 +691,5 @@
             </div>
         </div>
     </footer>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/69a90d19b558e41c381189c5/1jiu5maji';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>

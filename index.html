@@ -564,6 +564,23 @@
             <div class="logo" style="margin-bottom: 16px;">Nova<span>Ops</span></div>
             <p><a href="mailto:dmitri.parpiev@gmail.com">dmitri.parpiev@gmail.com</a></p>
             <p class="tagline">Currently accepting 5 new clients. No contracts. Cancel anytime.</p>
+            
+            <div style="margin-top: 40px; max-width: 400px; margin-left: auto; margin-right: auto;">
+                <h4 style="color: white; margin-bottom: 16px;">Or send a quick message:</h4>
+                <form action="mailto:dmitri.parpiev@gmail.com?subject=NovaOps Inquiry" method="post" enctype="text/plain" style="display: flex; flex-direction: column; gap: 12px;">
+                    <input type="text" name="name" placeholder="Your name" required style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--navy-light); color: white;">
+                    <input type="email" name="email" placeholder="Your email" required style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--navy-light); color: white;">
+                    <select name="plan" style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--navy-light); color: white;">
+                        <option value="">Interested in...</option>
+                        <option value="starter">Starter ($297/mo)</option>
+                        <option value="growth">Growth ($597/mo)</option>
+                        <option value="scale">Scale ($1,197/mo)</option>
+                        <option value="chat">Just want to chat</option>
+                    </select>
+                    <textarea name="message" placeholder="Tell me about your biggest operational challenge..." rows="4" style="padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--navy-light); color: white; resize: vertical;"></textarea>
+                    <button type="submit" class="cta-button" style="border: none; cursor: pointer; width: 100%;">Send Message</button>
+                </form>
+            </div>
         </div>
     </footer>
 </body>

@@ -64,8 +64,57 @@
             font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 800;
             line-height: 1.1;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             color: white;
+        }
+        
+        .hero-tag {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        
+        .hero-sub {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 550px;
+            margin: 0 auto 32px;
+        }
+        
+        .hero-results {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+        
+        .result-item {
+            text-align: center;
+        }
+        
+        .result-num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent-light);
+        }
+        
+        .result-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        @media (max-width: 500px) {
+            .hero-results {
+                gap: 20px;
+            }
+            .result-num {
+                font-size: 1.5rem;
+            }
         }
         
         .hero h1 span {
@@ -332,9 +381,24 @@
     
     <section class="hero">
         <div class="container">
-            <h1>Your 24/7 <span>AI Operations Team</span></h1>
-            <p>I handle the busywork — so you can focus on revenue. Research, content, automation, and ongoing operations handled.</p>
-            <a href="mailto:dmitri.parpiev@gmail.com?subject=Interested+in+NovaOps" class="cta-button">Get Started</a>
+            <p class="hero-tag">For founders who wear too many hats</p>
+            <h1>Stop Doing <span>Unproductive Work</span></h1>
+            <p class="hero-sub">What if you had 10+ extra hours every week? I handle the tasks that don't grow your business — so you can focus on revenue.</p>
+            <div class="hero-results">
+                <div class="result-item">
+                    <div class="result-num">12hr</div>
+                    <div class="result-label">Saved / week</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-num">48hr</div>
+                    <div class="result-label">Turnaround time</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-num">$0</div>
+                    <div class="result-label">Software costs</div>
+                </div>
+            </div>
+            <a href="mailto:dmitri.parpiev@gmail.com?subject=Interested+in+NovaOps" class="cta-button">Get 10 Hours Back Every Week</a>
             <div class="trust">
                 <span>✓ No long-term contract</span>
                 <span>✓ Cancel anytime</span>

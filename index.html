@@ -106,15 +106,24 @@
         .section h2 {
             font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 32px;
+            margin-bottom: 20px;
             color: white;
             text-align: center;
         }
         
+        .section-sub {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
         
         .card {
@@ -130,14 +139,25 @@
         }
         
         .card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 12px;
+            font-size: 1.15rem;
+            margin-bottom: 16px;
             color: white;
         }
         
         .card p {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+        }
+        
+        .card ul {
+            margin-top: 12px;
+            padding-left: 18px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        
+        .card li {
+            margin-bottom: 6px;
         }
         
         .card-icon {
@@ -228,6 +248,45 @@
             font-weight: bold;
         }
         
+        .process {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 600px) {
+            .process {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .process-step {
+            text-align: center;
+        }
+        
+        .step-num {
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin: 0 auto 16px;
+        }
+        
+        .process-step h4 {
+            color: white;
+            margin-bottom: 8px;
+        }
+        
+        .process-step p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
         footer {
             padding: 40px 0;
             text-align: center;
@@ -245,6 +304,22 @@
             color: var(--text-muted);
             margin-top: 16px;
         }
+        
+        .trust {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .trust span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
     </style>
 </head>
 <body>
@@ -258,34 +333,119 @@
     <section class="hero">
         <div class="container">
             <h1>Your 24/7 <span>AI Operations Team</span></h1>
-            <p>I handle the busywork — research, content, automation, and ongoing operations — so you can focus on growing your business.</p>
+            <p>I handle the busywork — so you can focus on revenue. Research, content, automation, and ongoing operations handled.</p>
             <a href="mailto:dmitri.parpiev@gmail.com?subject=Interested+in+NovaOps" class="cta-button">Get Started</a>
+            <div class="trust">
+                <span>✓ No long-term contract</span>
+                <span>✓ Cancel anytime</span>
+                <span>✓ 24/7 availability</span>
+            </div>
         </div>
     </section>
     
     <section class="section">
         <div class="container">
-            <h2>What I Do</h2>
+            <h2>Services I Offer</h2>
+            <p class="section-sub">Specific tasks I can take off your plate — every week.</p>
+            
             <div class="grid">
                 <div class="card">
                     <div class="card-icon">🔍</div>
                     <h3>Research & Analysis</h3>
-                    <p>Competitor monitoring, market research, lead enrichment, and data-driven reports.</p>
+                    <p>Deep dives into competitors, markets, and prospects.</p>
+                    <ul>
+                        <li>Competitor pricing & product tracking</li>
+                        <li>Lead research & enrichment</li>
+                        <li>Market trend reports</li>
+                        <li>Industry analysis</li>
+                    </ul>
                 </div>
+                
                 <div class="card">
                     <div class="card-icon">✍️</div>
-                    <h3>Content & Copy</h3>
-                    <p>Blog posts, email sequences, social media content, and product descriptions.</p>
+                    <h3>Content Creation</h3>
+                    <p>Written content that converts — done in hours, not weeks.</p>
+                    <ul>
+                        <li>Blog posts & articles</li>
+                        <li>Email sequences & newsletters</li>
+                        <li>Product descriptions</li>
+                        <li>Social media posts</li>
+                        <li>Landing page copy</li>
+                    </ul>
                 </div>
+                
                 <div class="card">
                     <div class="card-icon">⚡</div>
-                    <h3>Automation Setup</h3>
-                    <p>Zapier workflows, email automations, data entry, and process optimization.</p>
+                    <h3>Automation & Setup</h3>
+                    <p>Systems that run while you sleep.</p>
+                    <ul>
+                        <li>Zapier / Make workflows</li>
+                        <li>Email automations</li>
+                        <li>CRM data entry & cleanup</li>
+                        <li>Calendar scheduling</li>
+                        <li>Form & survey setup</li>
+                    </ul>
                 </div>
+                
                 <div class="card">
                     <div class="card-icon">📊</div>
-                    <h3>Ongoing Operations</h3>
-                    <p>Weekly summaries, document drafting, customer research, and data organization.</p>
+                    <h3>Data & Operations</h3>
+                    <p>Organization and ongoing operational support.</p>
+                    <ul>
+                        <li>Spreadsheet building & formulas</li>
+                        <li>Data cleaning & organization</li>
+                        <li>Document drafting & editing</li>
+                        <li>Customer database updates</li>
+                        <li>Weekly progress summaries</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🛒</div>
+                    <h3>E-commerce Support</h3>
+                    <p>Product and store management.</p>
+                    <ul>
+                        <li>Product listing optimization</li>
+                        <li>Competitor product analysis</li>
+                        <li>Order processing help</li>
+                        <li>Review response drafts</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">📞</div>
+                    <h3>Sales Support</h3>
+                    <p>Help close more deals — faster.</p>
+                    <ul>
+                        <li>Cold outreach drafts</li>
+                        <li>Follow-up sequences</li>
+                        <li>Meeting notes & summaries</li>
+                        <li>Proposal templates</li>
+                        <li>Pipeline research</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="process">
+                <div class="process-step">
+                    <div class="step-num">1</div>
+                    <h4>Onboarding Call</h4>
+                    <p>We discuss your pain points, priorities, and what tasks to tackle first.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">2</div>
+                    <h4>I Get to Work</h4>
+                    <p>Research, build, automate — deliver completed work every week.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">3</div>
+                    <h4>Weekly Reports</h4>
+                    <p>You get a summary of what was done, what's next, and hours used.</p>
                 </div>
             </div>
         </div>
@@ -301,8 +461,9 @@
                     <ul>
                         <li>5 hours per month</li>
                         <li>Email support</li>
-                        <li>Research reports</li>
+                        <li>Research & reports</li>
                         <li>Content drafting</li>
+                        <li>Basic automation</li>
                     </ul>
                     <a href="mailto:dmitri.parpiev@gmail.com?subject=Starter+Plan" class="cta-button" style="width:100%;">Start</a>
                 </div>
@@ -312,8 +473,9 @@
                     <ul>
                         <li>12 hours per month</li>
                         <li>Priority turnaround</li>
-                        <li>Automation setup</li>
+                        <li>Full automation setup</li>
                         <li>Bi-weekly calls</li>
+                        <li>Slack support</li>
                     </ul>
                     <a href="mailto:dmitri.parpiev@gmail.com?subject=Growth+Plan" class="cta-button" style="width:100%;">Start</a>
                 </div>
@@ -323,8 +485,9 @@
                     <ul>
                         <li>25 hours per month</li>
                         <li>Dedicated Slack</li>
-                        <li>Strategy calls</li>
+                        <li>Weekly strategy calls</li>
                         <li>Custom projects</li>
+                        <li>Priority support</li>
                     </ul>
                     <a href="mailto:dmitri.parpiev@gmail.com?subject=Scale+Plan" class="cta-button" style="width:100%;">Start</a>
                 </div>

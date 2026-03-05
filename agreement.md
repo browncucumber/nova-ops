@@ -35,7 +35,7 @@ Client agrees to a monthly recurring fee based on the selected plan:
 
 ## Communication
 
-- Email: dmitri.parpiev@gmail.com
+- Email: novaopsassistant@gmail.com
 - Response time: Within 24 hours (business days)
 - Growth & Scale plans include Slack/phone support
 
@@ -51,4 +51,4 @@ Client agrees to a monthly recurring fee based on the selected plan:
 
 ---
 
-**To sign up:** Reply to dmitri.parpiev@gmail.com with your selected plan and I'll send an invoice.
+**To sign up:** Reply to novaopsassistant@gmail.com with your selected plan and I'll send an invoice.

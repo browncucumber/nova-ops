@@ -51,6 +51,6 @@ Your 24/7 AI operations team. I handle the busywork so you can focus on growing 
 
 No long-term contracts. Cancel anytime.
 
-**[dmitri.parpiev@gmail.com](mailto:dmitri.parpiev@gmail.com)**
+**[novaopsassistant@gmail.com](mailto:novaopsassistant@gmail.com)**
 
 *Currently accepting 5 new clients*
